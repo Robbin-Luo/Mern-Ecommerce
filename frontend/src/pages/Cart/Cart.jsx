@@ -44,7 +44,7 @@ const Cart = () => {
 
       if (totalAmount > 0) {
         try {
-          const res = await axios.post('/create-payment-intent', { totalAmount: totalAmount.toFixed(2) }, { signal: abortController.signal });
+          const res = await axios.post('/api/create-payment-intent', { totalAmount: totalAmount.toFixed(2) }, { signal: abortController.signal });
           setClientSecret(res.data.clientSecret);
           setPaymentIntentLoading(false);
         } catch (err) {
