@@ -52,7 +52,7 @@ const ManageOrders = () => {
                       <div className='product-name'><Link to={`/products/${item.product.category}/${item.product._id}`}>{item.product.name}</Link></div>
                     </div>
                     <div className='product-order-info'>
-                      <div className='product-price'>${item.product.specification}</div>
+                      <div className='product-price'>{item.product.specification}</div>
                       <div className='product-quantity'>quantity: {item.quantity}</div>
                     </div>
                     <div className='order-subtotal'>
