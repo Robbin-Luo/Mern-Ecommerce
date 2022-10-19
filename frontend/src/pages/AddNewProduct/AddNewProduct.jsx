@@ -3,7 +3,8 @@ import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
 import './AddNewProduct.css'
 import { useAddNewProductMutation } from '../../services/appApi'
 import { ImCross } from 'react-icons/im'
-import axios from '../../axios'
+// import axios from '../../axios'
+import axios from 'axios';
 
 const AddNewProduct = () => {
   const [name, setName] = useState('');

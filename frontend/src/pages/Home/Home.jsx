@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
-import axios from '../../axios'
-
+// import axios from '../../axios'
+import axios from 'axios'
 import { getHomeProducts } from '../../features/productSlice'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'

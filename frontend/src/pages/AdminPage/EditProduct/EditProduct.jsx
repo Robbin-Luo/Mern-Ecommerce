@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Form, Button, Alert } from 'react-bootstrap'
 import { FcSearch } from 'react-icons/fc';
-import axios from '../../../axios';
+// import axios from '../../../axios';
+import axios from 'axios'
 import './EditProduct.css'
 import { Link } from 'react-router-dom';
 import LoadingSpinner from '../../LoadingSpinner/LoadingSpinner'

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap'
-import axios from '../../axios'
+// import axios from '../../axios'
+import axios from 'axios'
 import { MdOutlineAddShoppingCart } from 'react-icons/md'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'

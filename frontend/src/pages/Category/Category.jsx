@@ -6,7 +6,8 @@ import { updateUserCart } from '../../features/userSlice'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import axios from '../../axios'
+// import axios from '../../axios'
+import axios from 'axios'
 import './Category.css'
 
 const Category = () => {

@@ -6,7 +6,8 @@ import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { updateUserCart } from '../../features/userSlice'
 import { useNavigate } from 'react-router-dom'
-import axios from '../../axios'
+// import axios from '../../axios'
+import axios from 'axios'
 import './SearchResult.css'
 
 const SearchResult = (props) => {

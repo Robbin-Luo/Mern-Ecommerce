@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { PaymentElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import LoadingSpinner from '../../pages/LoadingSpinner/LoadingSpinner'
-import axios from '../../axios'
+// import axios from '../../axios'
+import axios from 'axios'
 import { useDispatch } from "react-redux";
 import { paymentSuccess } from "../../features/userSlice";
 
