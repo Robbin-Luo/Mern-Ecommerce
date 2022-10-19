@@ -1,0 +1,130 @@
+.manage-orders-container .order-container {
+  margin-bottom: 2rem;
+  box-shadow: 0 0 2px;
+  border-radius: 4px;
+}
+.manage-orders-container .order-container > p {
+  background-color: #f8f9fa;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+}
+.manage-orders-container .order-container .item-container {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.manage-orders-container .order-container .item-container:last-of-type {
+  border: none;
+}
+@media screen and (min-width: 450px) {
+  .manage-orders-container .order-container .item-container {
+    justify-content: space-evenly;
+  }
+}
+.manage-orders-container .order-container .item-container .alert {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  bottom: 0;
+  top: 0;
+}
+.manage-orders-container .order-container .item-container > div {
+  margin-right: 0.5rem;
+  height: 100%;
+}
+.manage-orders-container .order-container .item-container > div svg:hover {
+  color: red;
+  cursor: pointer;
+}
+.manage-orders-container .order-container .item-container .product-item {
+  width: 96px;
+}
+.manage-orders-container .order-container .item-container .product-item .product-picture {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  object-fit: cover;
+}
+.manage-orders-container .order-container .item-container .product-item .product-picture img {
+  height: 60px;
+  width: 60px;
+}
+.manage-orders-container .order-container .item-container .product-item .product-name {
+  display: flex;
+  height: 45px;
+  line-height: 12px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.manage-orders-container .order-container .item-container .product-order-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 120px;
+}
+.manage-orders-container .order-container .item-container .product-order-info .product-price {
+  color: #0d5257;
+  font-style: oblique;
+}
+.manage-orders-container .order-container .item-container .product-order-info > div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.manage-orders-container .order-container .item-container .product-order-info .product-quantity input {
+  width: 60px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+.manage-orders-container .order-container .item-container .add-to-cart-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.manage-orders-container .order-container .item-container .order-subtotal {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: bold;
+}
+.manage-orders-container .order-container .item-container .order-subtotal > div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.manage-orders-container .order-container .item-container .order-subtotal .product-subtotal {
+  color: #0d5257;
+  font-style: oblique;
+}
+.manage-orders-container .order-container .order-status {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  background-color: #f8f9fa;
+  font-weight: bold;
+  align-items: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.manage-orders-container .order-container .order-status p {
+  color: black;
+  margin-bottom: 0;
+}
+.manage-orders-container .order-container .order-status > button {
+  width: 96px;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+}

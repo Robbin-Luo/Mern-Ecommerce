@@ -1,0 +1,89 @@
+.edit-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  text-align: center;
+}
+.edit-product-container form .search-input {
+  width: 320px !important;
+}
+.edit-product-container .found-products-container {
+  padding-top: 1rem;
+  width: 100%;
+}
+.edit-product-container .found-products-container .found-product-container {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 4px;
+}
+.edit-product-container .found-products-container .found-product-container .found-product-image-container {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+}
+.edit-product-container .found-products-container .found-product-container .found-product-image-container img {
+  width: 60px;
+  height: 60px;
+}
+.edit-product-container .found-products-container .found-product-container .found-product-name {
+  width: 120px;
+  line-height: 14px;
+  text-align: center;
+}
+.edit-product-container .found-products-container .found-product-container .product-specification {
+  width: 86px;
+  text-align: center;
+}
+.edit-product-container .found-products-container .found-product-container .product-price {
+  width: 90px;
+}
+.edit-product-container .found-products-container .found-product-container .product-stock {
+  width: 81px;
+}
+.edit-product-container .found-products-container .found-product-container .button-container {
+  width: 95px;
+}
+.edit-product-container .found-products-container .found-product-container .button-container button {
+  border: 1px solid gray;
+  width: 80px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.edit-product-container .update-form-container {
+  padding: 1rem;
+}
+.edit-product-container .update-form-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.edit-product-container .update-form-container > div input {
+  width: 60px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.edit-product-container .update-form-container > div button {
+  background-color: orange;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid gray;
+  border-radius: 4px;
+  width: 80px;
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 450px) {
+  .edit-product-container .update-form-container > div button {
+    width: 100%;
+  }
+}

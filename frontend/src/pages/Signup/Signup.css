@@ -1,0 +1,41 @@
+.signup-image-container{
+  background-image: url(https://melbournebuildingmaterials.com.au/wp-content/uploads/elementor/thumbs/AdelaidebuildingSupplies_Banner_001-pozr1hte3qii0gcey3h9a3sd6zdrzs91tdfpb6nvj8.jpg);
+}
+.signInUp-form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:auto !important;
+  min-height: 100vh;
+}
+
+.signInUp-form-container .button-container {
+  text-align: center;
+}
+.signInUp-form-container .button-container button{
+  width: 100%;
+}
+.signInUp-form-container h1 {
+  text-align: center;
+}
+.signInUp-form-container p {
+  text-align: center;
+}
+.signInUp-image-container{
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.alert{
+  text-align: left !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.alert-danger{
+  text-align: center !important;
+  padding: 4px !important;
+}
+.alert svg{
+  color: red;
+}

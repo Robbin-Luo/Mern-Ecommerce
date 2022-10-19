@@ -1,0 +1,12 @@
+{ 
+  "name": "abc-trade-outlet",
+  "version": "1.0.0",
+  "main":"index.js",
+  "engines":{
+    "node":"16.15.1"
+  },
+  "scripts": {
+    "build":"cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start":"node backend/server.js"
+  }
+}

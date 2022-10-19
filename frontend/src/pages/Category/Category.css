@@ -1,0 +1,70 @@
+.category-container {
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.category-container > P {
+  padding-top: 1rem;
+  font-size: 16px;
+  line-height: 40px;
+}
+.category-container select {
+  margin-bottom: 1rem;
+}
+.category-container .category-products-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.category-container .category-products-container .category-product-container {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid gray;
+  text-align: center;
+}
+.category-container .category-products-container .category-product-container > div {
+  line-height: 36px;
+}
+.category-container .category-products-container .category-product-container > div:nth-child(2) {
+  width: 180px;
+  line-height: 12px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-container .category-products-container .category-product-container > div:last-child {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.category-container .category-products-container .category-product-container > div:last-child svg {
+  color: red;
+  font-size: 24px;
+  cursor: pointer;
+}
+.category-container .category-products-container .category-product-container > div:last-child svg:hover {
+  color: orange;
+}
+.category-container .category-products-container .category-product-container > div a {
+  font-weight: bold;
+}
+.category-container .category-products-container .category-product-container .category-product-image-container {
+  height: 180px;
+  object-fit: cover;
+  width: 180px;
+}
+.category-container .category-products-container .category-product-container .category-product-image-container img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.category-container .category-products-container .category-product-container .category-product-image-container img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}

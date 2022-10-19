@@ -1,0 +1,148 @@
+.main {
+  width: 100vw;
+}
+
+.sliding-pictures-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  /* overflow: hidden; */
+
+}
+
+.sliding-pictures-container img {
+  width: 100%;
+}
+
+.core {
+  margin: 4rem auto;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.category {
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.category:hover img {
+  transform: scale(1.1, 1.1);
+  transition: all 0.4s ease;
+}
+
+.category img {
+  width: 100%;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.category div {
+  display: block;
+  width: 100%;
+  right: 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  line-height: 48px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.home-product-container {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (max-width:450px) {
+    justify-content: space-evenly;
+  }
+
+  .update-cart-options {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .home-product {
+    border: 1px solid gray;
+    border-radius: 4px;
+    overflow: hidden;
+
+
+    >a div {
+      height: 48px;
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 14px;
+
+    }
+
+    >div {
+      margin-bottom: 6px;
+      font-weight: bold;
+
+    }
+
+    .price-cart {
+
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: flex;
+      justify-content: space-between;
+
+      svg {
+        color: red;
+        font-size: 24px;
+        cursor: pointer;
+
+        &:hover {
+          color: orange;
+        }
+      }
+
+    }
+
+
+
+    .home-product-image-container {
+      height: 150px;
+      object-fit: cover;
+      width: 150px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}

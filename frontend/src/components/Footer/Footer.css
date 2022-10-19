@@ -1,0 +1,40 @@
+.footer {
+  background-color: rgba(248, 249, 250) !important;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  line-height: 28px;
+  width: 100vw;
+}
+.footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer > div div {
+  display: flex;
+  text-align: center;
+}
+.footer > div div svg {
+  position: relative;
+  top: 6px;
+}
+.footer > div div:last-child {
+  margin-left: 0.5rem;
+}
+.footer > div div:last-child svg {
+  display: flex;
+  font-size: 20px;
+}
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.footer .copyright svg {
+  position: relative;
+  font-size: 20px;
+  top: 4px;
+}
