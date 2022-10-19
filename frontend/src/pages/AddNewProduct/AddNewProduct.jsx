@@ -42,7 +42,7 @@ const AddNewProduct = () => {
   )
 
   const handleDelete = (public_id) => {
-    axios.delete(`/images/${public_id}`)
+    axios.delete(`/api/images/${public_id}`)
       .then((res) => {
         setPictures((prev) => prev.filter((pic) => pic.public_id !== public_id));
       })

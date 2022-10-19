@@ -2,11 +2,11 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const appApi = createApi({
   reducerPath: 'appApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3001' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://abc-trade-outlet.herokuapp.com/' }),
   endpoints: (builder) => ({
     signup: builder.mutation({
       query: (user) => ({
-        url: '/users/signup',
+        url: '/api/users/signup',
         method: 'POST',
         body: user
       })
@@ -14,7 +14,7 @@ export const appApi = createApi({
 
     signin: builder.mutation({
       query: (user) => ({
-        url: '/users/signin',
+        url: '/api/users/signin',
         method: 'POST',
         body: user
       })
@@ -22,7 +22,7 @@ export const appApi = createApi({
 
     addNewProduct: builder.mutation({
       query: (product) => ({
-        url: '/products/add-new-product',
+        url: '/api/products/add-new-product',
         method: 'POST',
         body: product
       })

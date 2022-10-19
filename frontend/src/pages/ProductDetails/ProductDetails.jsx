@@ -28,7 +28,7 @@ const ProductDetails = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`/products/${category}/${id}`);
+        const response = await axios.get(`/api/products/${category}/${id}`);
         setProduct(response.data.foundProduct);
         setSimilarProducts(response.data.similar);
         setLoading(false);
@@ -48,7 +48,7 @@ const ProductDetails = () => {
       setLoading(true);
       const updateUser = async () => {
         try {
-          const res = await axios.post(`/users/${user._id}/update-cart`, item);
+          const res = await axios.post(`/api/users/${user._id}/update-cart`, item);
           dispatch(updateUserCart(res.data));
           setLoading(false);
         } catch (err) {

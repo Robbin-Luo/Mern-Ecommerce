@@ -26,7 +26,7 @@ const SearchResult = (props) => {
     const fetchSearchProducts = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`/products/search?keyword=${searchParams}`);
+        const response = await axios.get(`/api/products/search?keyword=${searchParams}`);
         setSearchProducts(response.data);
         setLoading(false);
       } catch (err) {
@@ -61,7 +61,7 @@ const SearchResult = (props) => {
       setLoading(true);
       const updateUser = async () => {
         try {
-          const res = await axios.post(`/users/${user._id}/update-cart`, item);
+          const res = await axios.post(`/api/users/${user._id}/update-cart`, item);
           dispatch(updateUserCart(res.data));
           setLoading(false);
         } catch (err) {

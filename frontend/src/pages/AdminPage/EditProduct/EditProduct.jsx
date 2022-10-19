@@ -24,7 +24,7 @@ const EditProduct = () => {
       alert('search keyword should be no shorter than 3 letters')
     } else {
       setSearchLoading(true);
-      await axios.get(`/products/search?keyword=${trimedText}`)
+      await axios.get(`/api/products/search?keyword=${trimedText}`)
         .then((res) => {
           setSearchText('');
           setSearchLoading(false);
@@ -55,7 +55,7 @@ const EditProduct = () => {
     if (window.confirm(`update price to ${newPrice} and add ${newStock} new stock to the system?`)) {
       setUpdateLoading(true);
       setUpdateError(null);
-      axios.post(`/products/${id}`, { newPrice, newStock })
+      axios.post(`/api/products/${id}`, { newPrice, newStock })
         .then((res) => {
           setFoundProducts(res.data);
           setUpdateLoading(false);

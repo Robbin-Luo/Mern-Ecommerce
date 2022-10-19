@@ -18,12 +18,12 @@ const orderRouter = require('./routes/orderRoutes');
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use('/users', userRoutes);
-app.use('/products', productRoutes);
-app.use('/images', imageRoutes);
-app.use('/orders', orderRouter);
+app.use('/api/users', userRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/images', imageRoutes);
+app.use('/api/orders', orderRouter);
 
-app.post("/create-payment-intent", async (req, res) => {
+app.post("/api/create-payment-intent", async (req, res) => {
   const { totalAmount } = req.body;
 
   const paymentIntent = await stripe.paymentIntents.create({

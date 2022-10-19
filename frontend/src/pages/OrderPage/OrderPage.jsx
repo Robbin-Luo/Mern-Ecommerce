@@ -19,7 +19,7 @@ const OrderPage = () => {
       setOrdersLoading(true);
       if (user) {
         try {
-          const res = await axios.get(`/orders/${user._id}`, { signal: abortController.signal });
+          const res = await axios.get(`/api/orders/${user._id}`, { signal: abortController.signal });
           setAllOrders(res.data);
           setOrdersLoading(false);
         } catch (err) {

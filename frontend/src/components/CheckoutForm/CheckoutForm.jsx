@@ -34,7 +34,7 @@ export default function CheckoutForm(props) {
       switch (paymentIntent.status) {
         case "succeeded":
           setMessage("Payment succeeded!");
-          axios.post('/orders/create-order', { user_id: user._id, order: user.cart }, { signal: abortController.signal })
+          axios.post('/api/orders/create-order', { user_id: user._id, order: user.cart }, { signal: abortController.signal })
             .then((res) => {
               dispatch(paymentSuccess(res.data.updatedUser));
             })
@@ -73,7 +73,7 @@ export default function CheckoutForm(props) {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `http://localhost:3000/${user._id}/cart`,
+        return_url: `https://abc-trade-outlet.herokuapp.com/${user._id}/cart`,
       },
     });
 

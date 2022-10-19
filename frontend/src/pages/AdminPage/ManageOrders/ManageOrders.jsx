@@ -16,7 +16,7 @@ const ManageOrders = () => {
     const fetchUndeliveredOrders = async () => {
       setIsLoading(true);
       try {
-        const res = await axios.get('/orders/undelivered-orders');
+        const res = await axios.get('/api/orders/undelivered-orders');
         setUndeliveredOrders(res.data);
         setIsLoading(false);
       } catch (err) {
@@ -31,7 +31,7 @@ const ManageOrders = () => {
   const changeToDelivered = (id) => {
     if (window.confirm('This order has been delivered?')) {
       setChangeStatusLoading(true);
-      axios.patch(`/orders/update-order-status/${id}`)
+      axios.patch(`/api/orders/update-order-status/${id}`)
         .then((res) => { setUndeliveredOrders(res.data); setChangeStatusLoading(false) })
         .catch((err) => { setChangeStatusError('fail to update, please try again later'); setChangeStatusLoading(false) })
     }

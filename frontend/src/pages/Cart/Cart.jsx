@@ -74,7 +74,7 @@ const Cart = () => {
       setLoading(true);
       const updateUser = async () => {
         try {
-          const res = await axios.post(`/users/${user._id}/delete-cart`, item);
+          const res = await axios.post(`/api/users/${user._id}/delete-cart`, item);
           dispatch(updateUserCart(res.data));
           setLoading(false);
         } catch (err) {
@@ -99,7 +99,7 @@ const Cart = () => {
       setLoading(true);
       const updateUser = async () => {
         try {
-          const res = await axios.post(`/users/${user._id}/update-cart`, item);
+          const res = await axios.post(`/api/users/${user._id}/update-cart`, item);
           dispatch(updateUserCart(res.data));
           setLoading(false);
         } catch (err) {

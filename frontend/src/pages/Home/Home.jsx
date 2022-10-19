@@ -25,7 +25,7 @@ const Home = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('/products')
+    axios.get('/api/products')
       .then((res) => {
         dispatch(getHomeProducts(res.data));
       }).catch(
@@ -65,7 +65,7 @@ const Home = () => {
       setLoading(true);
       const updateUser = async () => {
         try {
-          const res = await axios.post(`/users/${user._id}/update-cart`, item);
+          const res = await axios.post(`/api/users/${user._id}/update-cart`, item);
           dispatch(updateUserCart(res.data));
           setLoading(false);
         } catch (err) {

@@ -32,7 +32,7 @@ const Category = () => {
     const fetchCategoryProducts = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`/products/${fixedCategory}`);
+        const response = await axios.get(`/api/products/${fixedCategory}`);
         setCategoryProducts(response.data);
         setLoading(false);
       } catch (err) {
@@ -67,7 +67,7 @@ const Category = () => {
       setLoading(true);
       const updateUser = async () => {
         try {
-          const res = await axios.post(`/users/${user._id}/update-cart`, item);
+          const res = await axios.post(`/api/users/${user._id}/update-cart`, item);
           dispatch(updateUserCart(res.data));
           setLoading(false);
         } catch (err) {
